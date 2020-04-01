@@ -104,7 +104,7 @@ app.delete('/api/stuff/:id', (req, res, next) => {
 
 
 
-  app.use('/api/stuffs', (req, res, next) => {
+  app.use('/api/stuff', (req, res, next) => {
     Thing.find().then(
       (things) => {
         res.status(200).json(things);
